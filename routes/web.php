@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\ContatoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [InicioController::class, 'index']);
+
+Route::get('/carreira', [CarreiraController::class, 'index']);
+
+Route::get('/tratamentos', [TratamentosController::class, 'index']);
+
+Route::get('/servicos', [ServicosController::class, 'index']);
+
+Route::get('/contato', [ContatoController::class, 'index']);
+
+Route::fallback(function () {
+    return redirect('/pagina-nao-encontrada');
 });

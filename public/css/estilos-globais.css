@@ -1,0 +1,164 @@
+:root {
+    --cor-primaria: #7BBCB7;
+    --cor-secundaria: #FFFFFF;
+    /* --cor-hover: #1C8653; */
+    --cor-hover: #E5C97A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Estilos do menu */
+.navbar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 1em;
+}
+
+
+.container_principal_menu {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.container_informacoes_menu {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+}
+
+
+.informacoes_menu_container {
+    display: block;
+    margin: 2em 8em 0 2em;
+}
+
+
+.texto_principal {
+    font-size: 3em;   
+}
+
+
+.sub_texto {
+    font-size: 1.5em;
+    color: var(--cor-hover);
+}
+
+
+.whatsapp_container {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.link_whatsapp {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--cor-secundaria);
+    transition: all .3s ease-in-out;
+}
+
+
+.link_whatsapp:hover {
+    color: #1C8653;
+}
+
+
+.link {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--cor-secundaria);
+    transition: all .3s ease-in-out;
+}
+
+
+.container_ul_menu {
+    margin-bottom: 1em;
+}
+
+
+.ul_menu {
+    display: inline-flex;
+    text-align: center;
+    list-style: none;
+    float: right;
+    margin-right: 25em;
+}
+
+
+.li_menu {
+    margin: 0 1em;
+}
+
+
+.link:hover {
+    color: var(--cor-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos Footer */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 190px;
+    position: sticky;
+    bottom: 0;
+}
+
+
+.email {
+    display: block;
+}
+
+
+.container_endereco{
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+}
+
+
+.endereco{
+    diplay: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-right: 1em;
+}
+
+
+.container_mapa {
+    display: flex;
+    align-items: center;
+}
+
+
+.mapa {
+    width: 350px;
+    height: 150px;
+}
+
+
