@@ -1,0 +1,94 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0.5em auto;
+}
+
+.titulo {
+    display: block;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    margin: 0.5em 0;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+
+.input {
+    padding: 1em;
+    margin: 0 0 2em 0;
+    border: 1px solid var(--cor-hover);
+    border-radius: 7px;
+    transition: all .25s ease-in-out;
+    box-sizing: border-box;
+}
+
+
+.input:hover {
+    background-color: #F9EAB2;
+    color: #000000;
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+
+.inputs_divididos {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+.input_email, .input_telefone {
+    width: 239px;
+}
+
+
+.input_email {
+    margin-left: 0.5em;
+}
+
+
+.input_telefone {
+    margin-right: 0.5em;
+}
+
+.input_endereco {
+    display: block;
+}
+
+
+.input_nome, .input_endereco, .textarea {
+    /* width: 94%; */
+    width: 490px;
+}
+
+
+.btn_enviar {
+    padding: 1em 2em;
+    border: 1px solid #F9EAB2;
+    border-radius: 10px;
+    background-color: #F9EAB2;
+    color: #C49E6D;
+    font-weight: bold;
+}
+
+
+.btn_enviar:hover {
+    background-color: var(--cor-hover);
+    color: white;
+    border: 1px solid var(--cor-hover);
+    cursor: pointer;
+}

@@ -1,8 +1,11 @@
 <?php
 
-use App\Http\Controllers\InicioController;
-use App\Http\Controllers\ContatoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\CarreiraController;
+use App\Http\Controllers\TratamentosController;
+use App\Http\Controllers\ServicosController;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
