@@ -11,7 +11,9 @@
     <main>
         <h1 class="titulo">Serviços</h1>
 
-        
+        Essa página será destinada para mostrar serviços que ele realiza atualmente, para que possíveis clientes já saibam se o que eles precisam está dentro do que o dentista oferece.
+        <br>
+        Basicamente será mostrado de alguma forma que ainda deve ser definida os tipos de serviços que ele realiza
     </main>
 
 @endsection

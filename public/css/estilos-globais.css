@@ -7,8 +7,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* Para fixar o footer no final da página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+main {
+    flex: 1 1 0;
+}
 
 
 /* Estilos do menu */
@@ -125,8 +132,8 @@ footer {
     align-items: center;
     width: 100%;
     height: 190px;
-    position: sticky;
-    bottom: 0;
+    /* position: sticky;
+    bottom: 0; */
 }
 
 

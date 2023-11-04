@@ -3,7 +3,7 @@ main {
     align-items: center;
     flex-direction: column;
     width: 90%;
-    margin: 0.5em auto;
+    margin: 0 auto;
 }
 
 .titulo {
@@ -20,7 +20,7 @@ form {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
 }
 
 
@@ -83,12 +83,13 @@ input:focus, textarea:focus {
     background-color: #F9EAB2;
     color: #C49E6D;
     font-weight: bold;
+    transition: all .25s ease-in-out;
 }
 
 
 .btn_enviar:hover {
-    background-color: var(--cor-hover);
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-hover);
     border: 1px solid var(--cor-hover);
     cursor: pointer;
 }
