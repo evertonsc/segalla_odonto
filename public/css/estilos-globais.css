@@ -104,8 +104,34 @@ main {
 }
 
 
+/* Estilos menu hamburger (telas menores) */
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #FFF;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+/* Fim estilos menu hamburguer */
+
+
 .container_ul_menu {
-    margin-bottom: 1em;
+    margin: 1em 0 2em 0;
 }
 
 
@@ -187,3 +213,121 @@ footer {
 }
 
 
+
+
+@media screen and (max-width: 750px) {
+    .container_principal_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_informacoes_menu {
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+    }
+
+
+    .container_logo {
+        width: fit-content;
+        margin-right: 2.3em;
+    }
+
+
+    .informacoes_menu_container {
+        width: fit-content;
+        text-align: center;
+        margin: 1em 0 0 0;
+    }
+
+
+    .whatsapp_container {
+        flex-direction: row;
+        margin: 1em 0 0 0;
+    } 
+
+    .hamburguer {
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .ul_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--cor-primaria);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        z-index: 1;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        //pointer-events: none;   /* Evitar que o usuário clique em algo que não está aparecendo na tela */
+    }
+
+    .navbar.active .ul_menu {
+        clip-path: circle(1500px at 90% -15%);
+        //pointer-events: all;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 750px) and (max-width: 1430px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+
+    .container_principal_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .container_informacoes_menu {
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+    }
+    
+    
+    .informacoes_menu_container {
+        margin: 1em 0 0 0;
+    }
+
+
+    .sub_texto_logo {
+        width: 500px;
+    }
+
+
+    .whatsapp_container {
+        margin: 1em 0;
+    }
+
+
+    .container_ul_menu {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 0 0;
+    }
+
+
+    .ul_menu {
+        margin: 0;
+        text-align: center;
+    }
+}

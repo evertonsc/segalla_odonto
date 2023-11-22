@@ -46,6 +46,7 @@
             
             
             <div class="container_ul_menu">
+                <button type="button" class="hamburguer"></button>
                 <ul class="ul_menu">
                     <li class="li_menu"><a href="/" class="link menu_ativo">Início</a></li>
                     <li class="li_menu"><a href="/carreira" class="link">Carreira</a></li>
@@ -60,7 +61,7 @@
     </header>
 
     @yield('conteudo')
-
+    colocar icone instagram no footer
 
     <footer>
         <p class="email">Email: segallaodonto@gmail.com</p>
@@ -79,6 +80,7 @@
     </footer>
 
 
+    <script src="/js/main.js"></script>
     <script src="/js/text-reveal.js"></script>
     @yield('scripts')
 </body>
