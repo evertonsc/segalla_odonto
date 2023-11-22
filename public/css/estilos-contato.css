@@ -6,13 +6,6 @@ main {
     margin: 0 auto;
 }
 
-.titulo {
-    display: block;
-    font-weight: 400;
-    color: var(--cor-primaria);
-    margin: 0.5em 0;
-}
-
 
 form {
     display: flex;

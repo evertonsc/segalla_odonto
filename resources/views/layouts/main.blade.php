@@ -30,8 +30,8 @@
                     </div>
                     
                     <div class="informacoes_menu_container">
-                        <h1 class="texto_principal">Douglas Segalla</h1>
-                        <p class="sub_texto">Odontologia Especializada - Reabilitação Bucal</p>
+                        <h1 class="texto_logo_principal">Douglas Segalla</h1>
+                        <p class="sub_texto_logo">Odontologia Especializada - Reabilitação Bucal</p>
                     </div>
 
                 </div>
@@ -78,6 +78,8 @@
         </div>
     </footer>
 
+
+    <script src="/js/text-reveal.js"></script>
     @yield('scripts')
 </body>
 </html>

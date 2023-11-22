@@ -47,12 +47,12 @@ main {
 
 
 .btn {
-    padding: 5px 8px 8px 5px;
+    /* padding: 5px 8px 8px 5px;
     font-size: 4em;
-    text-align: center;
+    text-align: center; */
     background-color: transparent;
-    border: none;
-    color: #FFFFFF;
+    /* border: none;
+    color: #FFFFFF; */
     cursor: pointer;
 }
 

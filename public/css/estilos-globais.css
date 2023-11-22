@@ -18,6 +18,22 @@ main {
 }
 
 
+/* Estilos do text-reveal (podem ser sobrescritos (mudar de qual direção vem) nos arquivos.css de cada página) */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
+
 /* Estilos do menu */
 .navbar {
     background-color: var(--cor-primaria);
@@ -50,12 +66,12 @@ main {
 }
 
 
-.texto_principal {
+.texto_logo_principal {
     font-size: 3em;   
 }
 
 
-.sub_texto {
+.sub_texto_logo {
     font-size: 1.5em;
     color: var(--cor-hover);
 }
@@ -113,10 +129,12 @@ main {
 
 
 
-
-
-
-
+.titulo {
+    text-align: center;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    margin: 0.5em 0;
+}
 
 
 

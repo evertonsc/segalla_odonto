@@ -9,7 +9,7 @@
 @section('conteudo')
     
     <main>
-        <h1 class="titulo">Sorrir é muito melhor. Então, SORRIA!</h1>
+        <h1 class="titulo hidden">Sorrir é muito melhor. Então, SORRIA!</h1>
 
         <div class="carrossel">
             @for($i = 1; $i <= 15; $i++)    
@@ -25,8 +25,10 @@
             @endfor
 
             <div class="botoes">
-                <button type="button" class="btn btn_voltar"> < </button>
-                <button type="button" class="btn btn_avancar"> > </button>
+                {{-- <button type="button" class="btn btn_voltar"> < </button>
+                <button type="button" class="btn btn_avancar"> > </button> --}}
+                <button><img src="/img/pagina-inicio/botao-voltar.png" alt="Voltar" class="btn"></button>
+                <button><img src="/img/pagina-inicio/botao-avancar.png" alt="Avançar" class="btn"></button>
             </div>
         </div>
 
