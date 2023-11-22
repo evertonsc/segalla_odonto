@@ -7,6 +7,22 @@ main {
 }
 
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
+
+
 form {
     display: flex;
     justify-content: center;
@@ -17,6 +33,12 @@ form {
 }
 
 
+::placeholder {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+
 .input {
     padding: 1em;
     margin: 0 0 2em 0;
@@ -24,6 +46,7 @@ form {
     border-radius: 7px;
     transition: all .25s ease-in-out;
     box-sizing: border-box;
+    transition: all 1s;
 }
 
 

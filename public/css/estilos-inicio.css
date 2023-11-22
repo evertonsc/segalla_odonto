@@ -6,6 +6,22 @@ main {
     margin: 0 auto;
 }
 
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-50%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
+
 .titulo {
     display: block;
     font-weight: 400;
