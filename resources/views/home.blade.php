@@ -4,11 +4,12 @@
 
 @section('links')
     <link rel="stylesheet" href="/css/estilos-inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
 @endsection
 
 @section('conteudo')
     
-    <main>
+    <main class="">
         <h1 class="titulo hidden">Sorrir é muito melhor. Então, SORRIA!</h1>
 
         <div class="carrossel">
@@ -25,10 +26,8 @@
             @endfor
 
             <div class="botoes">
-                {{-- <button type="button" class="btn btn_voltar"> < </button>
-                <button type="button" class="btn btn_avancar"> > </button> --}}
-                <button><img src="/img/pagina-inicio/botao-voltar.png" alt="Voltar" class="btn"></button>
-                <button><img src="/img/pagina-inicio/botao-avancar.png" alt="Avançar" class="btn"></button>
+                <button type="button" class="btn btn_voltar"> < </button>
+                <button type="button" class="btn btn_avancar"> > </button>
             </div>
         </div>
 

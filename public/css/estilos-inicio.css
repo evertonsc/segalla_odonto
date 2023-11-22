@@ -47,16 +47,20 @@ main {
 
 
 .btn {
-    /* padding: 5px 8px 8px 5px;
+    padding: 0 8px 8px 0;
     font-size: 4em;
-    text-align: center; */
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
     background-color: transparent;
-    /* border: none;
-    color: #FFFFFF; */
+    border: none;
+    color: #E9E9EB;
     cursor: pointer;
+    text-shadow: 2px 2px 8px #000;
 }
 
-
+.btn:hover {
+    color: #FFFFFF;
+}
 .link_agendar_consulta {
     text-decoration: none;
     background-color: var(--cor-primaria);
