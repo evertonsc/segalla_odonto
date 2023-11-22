@@ -10,11 +10,11 @@ body {
     /* Para fixar o footer no final da página */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
     flex: 1 1 0;
+    height: 100vh;
 }
 
 
@@ -109,11 +109,11 @@ main {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #FFF;
+    border-top: 3px solid var(--cor-secundaria);
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 20px;
+    right: 25px;
 }
 
 
@@ -123,7 +123,7 @@ main {
     display: block;
     width: 30px;
     height: 3px;
-    background: #FFF;
+    background: var(--cor-secundaria);
     margin-top: 5px;
 }
 
@@ -167,22 +167,41 @@ main {
 
 /* Estilos Footer */
 footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    padding: 2.5em 0;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     text-align: center;
     font-size: 1.1em;
-    display: inline-flex;
+}
+
+
+.contatos {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 190px;
-    /* position: sticky;
-    bottom: 0; */
+    flex-direction: column;
+    gap: 5px;
 }
 
 
 .email {
     display: block;
+}
+
+
+.instagram {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+.email svg, .instagram svg {
+    vertical-align: middle;
 }
 
 
@@ -212,6 +231,20 @@ footer {
     height: 150px;
 }
 
+
+/* Responsividade dos estilos globais */
+
+@media screen and (max-width: 400px) {
+    .endereco {
+        max-width: 350px;
+        margin-right: 0;
+    }
+
+    
+    .mapa {
+        width: 300px;
+    }
+}
 
 
 
@@ -274,6 +307,10 @@ footer {
         clip-path: circle(1500px at 90% -15%);
         //pointer-events: all;
     }
+
+
+
+
 }
 
 
@@ -329,5 +366,31 @@ footer {
     .ul_menu {
         margin: 0;
         text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0;
+    }
+
+
+    .container_endereco {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        margin-left: 0;
+    }
+
+
+    .endereco {
+        margin-right: 0;
     }
 }
