@@ -1,0 +1,11 @@
+.card-container {
+    display: inline-grid;
+    place-content: center;
+    width: 80%;
+}
+
+
+.card {
+    width: 500px;
+    height: 500px;
+}
