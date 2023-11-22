@@ -43,7 +43,7 @@
                 </p>
             </div>
     
-            <img src="/img/imagem-carreira.png" alt="Foto Douglas Segalla" class="hidden">
+            <img src="/img/imagem-carreira.png" alt="Foto Douglas Segalla" class="foto hidden">
         </div>
     </main>
     

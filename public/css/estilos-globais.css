@@ -14,7 +14,7 @@ body {
 
 main {
     flex: 1 1 0;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -281,7 +281,7 @@ footer {
 
     .hamburguer {
         display: block;
-        position: fixed;
+        //position: fixed;
         z-index: 2;
     }
 
@@ -292,7 +292,7 @@ footer {
         width: 100vw;
         height: 100vh;
         background: var(--cor-primaria);
-        clip-path: circle(100px at 90% -15%);
+        clip-path: circle(100px at 90% -25%);
         transition: 1s ease-out;
         z-index: 1;
 
@@ -304,7 +304,7 @@ footer {
     }
 
     .navbar.active .ul_menu {
-        clip-path: circle(1500px at 90% -15%);
+        clip-path: circle(1500px at 90% -25%);
         //pointer-events: all;
     }
 
