@@ -14,24 +14,16 @@
 
         <div class="carrossel">
             @for($i = 1; $i <= 15; $i++)    
-                @if($i == 1)
-                    <div class="container_img hidden" style="transition: 1.5s;">
-                        <img src="/img/pagina-inicio/img{{ $i }}.webp" alt="Imagem {{ $i }}" class="img img_carrossel_ativa">
-                    </div>
-                @else
-                    <div class="container_img hidden" style="transition: 1.5s;">
-                        <img src="/img/pagina-inicio/img{{ $i }}.webp" alt="Imagem {{ $i }}" class="img img_carrossel_desativa">
-                    </div>
-                @endif
+                <div class="slide_container fade">
+                    <img src="/img/pagina-inicio/img{{ $i }}.png" alt="Imagem {{ $i }}" class="slide">
+                </div>
             @endfor
 
-            <div class="botoes">
-                <button type="button" class="btn btn_voltar hidden" style="transition: 2.4s;"> < </button>
-                <button type="button" class="btn btn_avancar hidden" style="transition: 2.4s;"> > </button>
-            </div>
+            <a class="prev hidden" style="transition: 2.4s;">&#10094;</a>
+            <a class="next hidden" style="transition: 2.4s;">&#10095;</a>
         </div>
 
-        <a class="link_agendar_consulta hidden" style="transition: 2s;" href="/contato">Agenda sua consulta</a>
+        <a class="link_agendar_consulta hidden" href="/contato">Agenda sua consulta</a>
     </main>
 
 @endsection

@@ -1,36 +1,61 @@
 $(document).ready(function () {
-    const imagens = document.querySelectorAll(".img");
-    let index = 0;
+    
+    /* Funções para trocar os slides com os botões */
+    var indiceSlide = 1;
+    mostrarSlides(indiceSlide);
 
-    function mostrarImagemAtiva() {
-        // Oculta a imagem ativa atual
-        imagens[index].classList.remove("img_carrossel_ativa");
-        imagens[index].classList.add("img_carrossel_desativa");
-
-        // Atualiza o índice para a próxima imagem
-        index = (index + 1) % imagens.length;
-
-        // Mostra a próxima imagem
-        imagens[index].classList.remove("img_carrossel_desativa");
-        imagens[index].classList.add("img_carrossel_ativa");
+    function mudarImagem(n) {
+        mostrarSlides(indiceSlide += n);
     }
 
-    function mostrarImagemAnterior() {
-        // Oculta a imagem ativa atual
-        imagens[index].classList.remove("img_carrossel_ativa");
-        imagens[index].classList.add("img_carrossel_desativa");
+    $(".prev").on('click', function () {
+        mudarImagem(-1);
+    });
+    
+    $(".next").on('click', function () {
+        mudarImagem(1);
+    });
 
-        // Atualiza o índice para a imagem anterior
-        index = (index - 1 + imagens.length) % imagens.length;
-
-        // Mostra a imagem anterior
-        imagens[index].classList.remove("img_carrossel_desativa");
-        imagens[index].classList.add("img_carrossel_ativa");
+    function mostrarSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide_container");
+    
+        if (n > slides.length) {
+            indiceSlide = 1;
+        }
+    
+        if (n < 1) {
+            indiceSlide = slides.length;
+        }
+        
+        for (i= 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        slides[indiceSlide - 1].style.display = "block";
     }
 
-    document.querySelector(".btn_voltar").addEventListener("click", mostrarImagemAnterior);
-    document.querySelector(".btn_avancar").addEventListener("click", mostrarImagemAtiva);
 
-    // Chama a função para mostrar a próxima imagem a cada 4 segundos
-    setInterval(mostrarImagemAtiva, 4000);
+    /* Trocar slides automaticamente */
+    var indiceSlide = 0;        // Tem que ser o mesmo nome pois sincroniza caso o usuário troque de imagem com algum dos botões
+    mostrarSlidesAutomatico();
+
+    function mostrarSlidesAutomatico() {
+        var i;
+        var slides = document.getElementsByClassName("slide_container");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        indiceSlide++;
+        
+        if (indiceSlide > slides.length) {
+            indiceSlide = 1;
+        }
+        slides[indiceSlide - 1].style.display = "block";
+        
+        setTimeout(mostrarSlidesAutomatico, 4000); // Change image every 2 seconds
+    }
+    
 });
+
+
