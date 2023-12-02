@@ -23,7 +23,7 @@
             
             <textarea id="mensagem" name="mensagem" cols="60" rows="7" placeholder="Escreva uma mensagem..." class="textarea input hidden" style="resize: none;"></textarea>
 
-            <button type="submit" class="btn_enviar hidden">Enviar</button>
+            <button type="submit" class="btn_enviar hidden">ENVIAR</button>
         </form>
 
         {{-- <p>Aqui falta somente fazer a função de enviar pro email funcionar, mas o formulário já está pronto</p> --}}

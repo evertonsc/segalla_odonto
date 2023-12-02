@@ -10,7 +10,7 @@ main {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(100%);
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
@@ -18,7 +18,7 @@ main {
 .show {
     opacity: 1;
     filter: blur(0px);
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 
@@ -29,7 +29,6 @@ form {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* height: 50svh; */
     margin-bottom: 1.5em;
 }
 
@@ -43,7 +42,7 @@ form {
 .input {
     padding: 1em;
     margin: 0 0 2em 0;
-    border: 1px solid var(--cor-hover);
+    border: 1px solid #D6D6D6;
     border-radius: 7px;
     box-sizing: border-box;
     transition: all 1s;
@@ -51,7 +50,7 @@ form {
 
 
 .input:hover {
-    background-color: #F9EAB2;
+    background-color: #D6D6D6;
     color: #000000;
     transition: background-color .25s, color .25s;
 }
@@ -100,10 +99,10 @@ input:focus, textarea:focus {
 
 .btn_enviar {
     padding: 1em 2em;
-    border: 1px solid #F9EAB2;
+    border: 2px solid var(--cor-primaria);
     border-radius: 10px;
-    background-color: #F9EAB2;
-    color: #C49E6D;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     font-weight: bold;
     transition: all 1.1s ease;
 }
@@ -111,8 +110,37 @@ input:focus, textarea:focus {
 
 .btn_enviar:hover {
     background-color: var(--cor-secundaria);
-    color: var(--cor-hover);
-    border: 1px solid var(--cor-hover);
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border 0.3s, cursor 0.3s;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 25em) {
+    .input {
+        width: 250px;
+    }
+}
+
+
+
+@media (min-width: 25em) and (max-width: 34.37em) {
+    .input {
+        width: 350px;
+    }    
+}
+
+
+@media (max-width: 34.37em) {
+    .inputs_divididos {
+        flex-direction: column;
+    }
+
+    .input_email, .input_telefone {
+        margin: 0 0 2em 0;
+    }
 }
