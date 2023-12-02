@@ -1,0 +1,79 @@
+main {
+    position: relative;
+    height: 60svh;
+    background-image: url(/img/imagem-cursos.png); /* Substitua pelo caminho da sua imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo preto com opacidade de 0.5 (ajuste conforme necessário) */
+}
+
+
+.texto_principal {
+    text-align: center;
+    color: #F7F7F7;
+    font-size: 4em;
+}
+
+
+.sub_texto {
+    text-align: center;
+    color: #F7F7F7;
+    font-size: 2.2em;
+}
+
+
+.link_contato {
+    color: var(--cor-hover);
+    text-decoration: none;
+}
+
+
+.link_contato:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main {
+        background-size: 100px cover;
+    }
+
+    .texto_principal {
+        font-size: 2em;
+    }
+    
+    
+    .sub_texto {
+        font-size: 1.25em;
+    }
+}
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .texto_principal {
+        font-size: 2.5em;
+    }
+    
+    
+    .sub_texto {
+        font-size: 1.75em;
+    }
+}

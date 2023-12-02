@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\CarreiraController;
-use App\Http\Controllers\TratamentosController;
+use App\Http\Controllers\CursosController;
 use App\Http\Controllers\ServicosController;
 use App\Http\Controllers\ContatoController;
 
@@ -22,7 +22,7 @@ Route::get('/', [InicioController::class, 'index']);
 
 Route::get('/carreira', [CarreiraController::class, 'index']);
 
-Route::get('/tratamentos', [TratamentosController::class, 'index']);
+Route::get('/cursos', [CursosController::class, 'index']);
 
 Route::get('/servicos', [ServicosController::class, 'index']);
 

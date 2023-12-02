@@ -10,7 +10,7 @@
 @section('conteudo')
     
     <main>
-        <h1 class="titulo hidden" style="transition: 1.7s;">Sorrir é muito melhor. Então, SORRIA!</h1>
+        <h1 class="titulo hidden" style="transition: 1s ease;">Sorrir é muito melhor. Então, SORRIA!</h1>
 
         <div class="carrossel">
             @for($i = 1; $i <= 15; $i++)    
@@ -19,11 +19,11 @@
                 </div>
             @endfor
 
-            <a class="prev hidden" style="transition: 2.4s;">&#10094;</a>
-            <a class="next hidden" style="transition: 2.4s;">&#10095;</a>
+            <a class="prev hidden">&#10094;</a>
+            <a class="next hidden">&#10095;</a>
         </div>
 
-        <a class="link_agendar_consulta hidden" href="/contato">Agenda sua consulta</a>
+        <a class="link_agendar_consulta hidden" href="/contato">Agende sua consulta</a>
     </main>
 
 @endsection

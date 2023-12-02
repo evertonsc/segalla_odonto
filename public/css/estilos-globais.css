@@ -1,7 +1,6 @@
 :root {
     --cor-primaria: #7BBCB7;
     --cor-secundaria: #FFFFFF;
-    /* --cor-hover: #1C8653; */
     --cor-hover: #E5C97A;
 }
 
@@ -13,7 +12,7 @@ body {
 }
 
 main {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
     height: 100%;
 }
 
@@ -196,7 +195,17 @@ footer {
 
 .instagram {
     text-decoration: none;
+}
+
+
+.instagram span {
     color: var(--cor-secundaria);
+    padding-left: 5px;
+}
+
+
+.instagram:hover span {
+    text-decoration: underline;
 }
 
 
@@ -281,7 +290,6 @@ footer {
 
     .hamburguer {
         display: block;
-        //position: fixed;
         z-index: 2;
     }
 

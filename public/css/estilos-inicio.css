@@ -113,7 +113,7 @@ main {
     color: var(--cor-secundaria);
     font-size: 1.2em;
     font-weight: bold;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
     margin: 1em 0 2em 0;
 }
 
@@ -124,6 +124,7 @@ main {
     color: var(--cor-primaria);
     border: 2px solid var(--cor-primaria);
     cursor: pointer;
+    transition: text-decoration 0.3s, background-color 0.3s, color 0.3s, border 0.3s, cursor 0.3s;
 }
 
 
@@ -133,7 +134,7 @@ main {
     }
 
     .titulo {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .link_agendar_consulta {

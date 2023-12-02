@@ -29,7 +29,8 @@ form {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* margin-bottom: 1.5em; */
+    /* height: 50svh; */
+    margin-bottom: 1.5em;
 }
 
 
@@ -44,7 +45,6 @@ form {
     margin: 0 0 2em 0;
     border: 1px solid var(--cor-hover);
     border-radius: 7px;
-    transition: all .25s ease-in-out;
     box-sizing: border-box;
     transition: all 1s;
 }
@@ -53,6 +53,7 @@ form {
 .input:hover {
     background-color: #F9EAB2;
     color: #000000;
+    transition: background-color .25s, color .25s;
 }
 
 
@@ -92,6 +93,11 @@ input:focus, textarea:focus {
 }
 
 
+.textarea {
+    transition: 1s ease;
+}
+
+
 .btn_enviar {
     padding: 1em 2em;
     border: 1px solid #F9EAB2;
@@ -99,7 +105,7 @@ input:focus, textarea:focus {
     background-color: #F9EAB2;
     color: #C49E6D;
     font-weight: bold;
-    transition: all .25s ease-in-out;
+    transition: all 1.1s ease;
 }
 
 
@@ -108,4 +114,5 @@ input:focus, textarea:focus {
     color: var(--cor-hover);
     border: 1px solid var(--cor-hover);
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s, cursor 0.3s;
 }
