@@ -12,7 +12,7 @@
     <main>
         <h1 class="titulo hidden">Entre em contato</h1>
 
-        <form action="">
+        <form action="https://formsubmit.co/65d1388b49c18c2d09b526cdeabb683b" method="POST">
             <input type="text" id="nome" name="nome" placeholder="Nome completo" class="input_nome input hidden" autocomplete="off">
             
             <div class="inputs_divididos">
@@ -24,6 +24,9 @@
             <textarea id="mensagem" name="mensagem" cols="60" rows="7" placeholder="Escreva uma mensagem..." class="textarea input hidden" style="resize: none;"></textarea>
 
             <button type="submit" class="btn_enviar hidden">ENVIAR</button>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:8000/email-enviado">
+            <input type="hidden" name="_captcha" value="false">
         </form>
 
         {{-- <p>Aqui falta somente fazer a função de enviar pro email funcionar, mas o formulário já está pronto</p> --}}

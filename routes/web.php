@@ -28,6 +28,13 @@ Route::get('/servicos', [ServicosController::class, 'index']);
 
 Route::get('/contato', [ContatoController::class, 'index']);
 
+
+// Somente pode acessar esta rota se foi redirecionado corretamente após o envio do formulário de contato
+Route::get('/email-enviado', function() {
+    return view('email-enviado');
+});
+
+
 Route::fallback(function () {
     return redirect('/pagina-nao-encontrada');
 });
