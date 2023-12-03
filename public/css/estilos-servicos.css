@@ -4,6 +4,31 @@
 }
 
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+
+.hidden:nth-child(3), .hidden:nth-child(4) {
+    transition: all 1.7s ease;
+}
+
+
+.hidden:nth-child(5), .hidden:nth-child(6) {
+    transition: all 2s ease;
+}
+
+
 .cards {
     display: grid;
     gap: 1em;

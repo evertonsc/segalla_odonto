@@ -12,7 +12,7 @@
         <h1 class="titulo">Serviços</h1>
 
         <section class="cards">
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/implante-dentario.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">IMPLANTES DENTÁRIOS</div>
@@ -21,7 +21,7 @@
             </div>
     
     
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/odontologia-dental.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">ODONTOLOGIA DIGITAL</div>
@@ -30,7 +30,7 @@
             </div> 
     
     
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/clareamento-dental.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">CLAREAMENTO DENTAL</div>
@@ -39,7 +39,7 @@
             </div> 
     
     
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/laminados-ceramicos.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">LAMINADOS CERÂMICOS</div>
@@ -48,7 +48,7 @@
             </div>             
     
     
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/proteses-moveis.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">PRÓTESES MÓVEIS</div>
@@ -57,7 +57,7 @@
             </div> 
     
 
-            <div class="card">
+            <div class="card hidden">
                 <div class="card_imagem" style="background-image: url(/img/pagina-servicos/proteses-fixas.png);"></div>
                 <div class="card_conteudo">
                     <div class="card_titulo">PRÓTESES FIXAS</div>
