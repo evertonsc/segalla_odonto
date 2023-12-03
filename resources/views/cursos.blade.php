@@ -10,7 +10,7 @@
 @section('conteudo')
     
     <main>
-        <h1 class="texto_principal hidden" style="transition: 1s ease;">Agenda de cursos em breve</h1>
+        <h1 class="texto_principal hidden" style="transition: 1s ease;">Agenda de cursos em breve 2024</h1>
         <p class="sub_texto hidden">Clique <a href="/contato" class="link_contato">aqui</a> para saber mais!</p>
     </main>
 
