@@ -19,8 +19,8 @@
                 </div>
             @endfor
 
-            <a class="prev hidden">&#10094;</a>
-            <a class="next hidden">&#10095;</a>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
         </div>
 
         <a class="link_agendar_consulta hidden" href="/contato">Agende sua consulta</a>
