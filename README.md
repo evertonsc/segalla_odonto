@@ -46,7 +46,7 @@ Aqui estão as tecnologias utilizadas no projeto.
 ![Página de serviços](./public/img/readme/servicos.png)
 
 ### 5 - Cursos 📚
-* Mostra informações dos serviços que o dentista realiza.
+* Mostra uma tela informativa de que cursos serão abertos em breve.
 
 ![Página de cursos](./public/img/readme/cursos.png)
 
@@ -57,7 +57,7 @@ Aqui estão as tecnologias utilizadas no projeto.
 
 
 ### 7 - Footer 🥾
-* Mostra informações dos serviços que o dentista realiza.
+* Mostra informações como endereço e alguns meios de contato.
 
 ![Footer para desktop](./public/img/readme/footer.png)
 
